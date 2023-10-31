@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="oro">#E7C931</color>
+    <color name="green">#36F43F</color>
+    <color name="verde">#4CAF50</color>
+    <color name="verdee">#8BC34A</color>
+    <color name="verdeRick2">#97CE4C</color>
+    <color name="verdeoscuro">#2A662D</color>
+    <color name="marron">#44281D</color>
+    <color name="carne">#E4A788</color>
+    <color name="asulpelo">#B2DAED</color>
+    <color name="carneRick">#D5C8B8</color>
+    <color name="negro">#303032</color>
+    <color name="asulitoepesia">#9FDED5</color>
+</resources>
