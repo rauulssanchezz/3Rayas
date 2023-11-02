@@ -26,15 +26,15 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/layut2"
+        app:layout_constraintBottom_toTopOf="@id/space1"
 
         >
-        <Button
+        <ImageView
             android:id="@+id/boton1"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/negro"
+            android:background="@color/negro"
             app:cornerRadius="0dp"
             android:onClick="pulsado"
             />
@@ -43,12 +43,12 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"
             />
-        <Button
+        <ImageView
             android:id="@+id/boton2"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/negro"
+            android:background="@color/negro"
             app:cornerRadius="0dp"
             android:onClick="pulsado"
             />
@@ -57,16 +57,25 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"
             />
-        <Button
+        <ImageView
             android:id="@+id/boton3"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/negro"
+            android:background="@color/negro"
             app:cornerRadius="0dp"
             android:onClick="pulsado"
             />
     </LinearLayout>
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintBottom_toTopOf="@id/layut2"
+        />
     <LinearLayout
         android:id="@+id/layut2"
         android:layout_width="match_parent"
@@ -74,14 +83,14 @@
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/layut3"
+        app:layout_constraintBottom_toTopOf="@id/space2"
         >
-        <Button
+        <ImageView
             android:id="@+id/boton4"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/negro"
+            android:background="@color/negro"
             app:cornerRadius="0dp"
             android:onClick="pulsado"
             />
@@ -90,12 +99,12 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"
             />
-        <Button
+        <ImageView
             android:id="@+id/boton5"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/negro"
+            android:background="@color/negro"
             app:cornerRadius="0dp"
             android:onClick="pulsado"
             />
@@ -104,16 +113,25 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"
             />
-        <Button
+        <ImageView
             android:id="@+id/boton6"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/negro"
+            android:background="@color/negro"
             app:cornerRadius="0dp"
             android:onClick="pulsado"
             />
     </LinearLayout>
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintBottom_toTopOf="@id/layut3"
+        />
     <LinearLayout
         android:id="@+id/layut3"
         android:layout_width="match_parent"
@@ -123,12 +141,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         >
-        <Button
+        <ImageView
             android:id="@+id/boton7"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/negro"
+            android:background="@color/negro"
             app:cornerRadius="0dp"
             android:onClick="pulsado"
             />
@@ -137,12 +155,12 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"
             />
-        <Button
+        <ImageView
             android:id="@+id/boton8"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/negro"
+            android:background="@color/negro"
             app:cornerRadius="0dp"
             android:onClick="pulsado"
             />
@@ -151,12 +169,12 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"
             />
-        <Button
+        <ImageView
             android:id="@+id/boton9"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/negro"
+            android:background="@color/negro"
             app:cornerRadius="0dp"
             android:onClick="pulsado"
             />
