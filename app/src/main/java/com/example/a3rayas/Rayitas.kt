@@ -6,10 +6,15 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.TextView
 
 class Rayitas : AppCompatActivity() {
     var tableroid= mutableListOf(1,2,3,4,5,6,7,8,9)
     var tablero= mutableListOf(0,0,0,0,0,0,0,0,0)
+    lateinit var imagen:TextView
+
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -98,20 +103,37 @@ class Rayitas : AppCompatActivity() {
 
     fun checkTablero(){
         var res =0
+        imagen=findViewById(R.id.texto)
+
         for (i in tablero.indices){
 
-                if(tablero[i]==0){
-                    tablero[i]=2
-                    res=tableroid[i]
+                if(tablero[i]==0) {
+                    tablero[i] = 2
+                    res = tableroid[i]
                     // Suponiendo que tienes el nombre del recurso en una variable llamada resourceName
-                    val resourceName = "boton"+res
+                    val resourceName = "boton" + res
 
                     // Obteniendo el ID del recurso a partir de su nombre
                     val resourceId = resources.getIdentifier(resourceName, "id", packageName)
-                    var img=findViewById<ImageView>(resourceId)
+                    var img = findViewById<ImageView>(resourceId)
                     img.setImageResource(R.drawable.aspiradora)
                     break
                 }
+                }
+        if((tablero[0]==1&&tablero[1]==1&&tablero[2]==1)||(tablero[0]==1&&tablero[3]==1&&tablero[6]==1)||(tablero[0]==1&&tablero[4]==1&&tablero[8]==1)||(tablero[3]==1&&tablero[4]==1&&tablero[5]==1)||(tablero[1]==1&&tablero[4]==1&&tablero[7]==1)||(tablero[2]==1&&tablero[4]==1&&tablero[7]==1)||(tablero[6]==1&&tablero[7]==1&&tablero[8]==1)||(tablero[2]==1&&tablero[5]==1&&tablero[8]==1)){
+            imagen.text="Mu bien has ganao"
+            for (i in tablero.indices){
+                tablero[i]=1
+            }
+
+        }
+        if((tablero[0]==2&&tablero[1]==2&&tablero[2]==2)||(tablero[0]==2&&tablero[3]==2&&tablero[6]==2)||(tablero[0]==2&&tablero[4]==2&&tablero[8]==2)||(tablero[3]==2&&tablero[4]==2&&tablero[5]==2)||(tablero[1]==2&&tablero[4]==2&&tablero[7]==2)||(tablero[2]==2&&tablero[4]==2&&tablero[7]==2)||(tablero[6]==2&&tablero[7]==2&&tablero[8]==2)||(tablero[2]==2&&tablero[5]==2&&tablero[8]==2)){
+            imagen.text="Has perdio puto tonto"
+            for (i in tablero.indices){
+                tablero[i]=2
+            }
+
+        }
 
         }
 
@@ -119,4 +141,3 @@ class Rayitas : AppCompatActivity() {
 
 
 
-}

@@ -20,6 +20,17 @@
         android:textColor="@color/carne"
         android:background="@color/negro"
         />
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintBottom_toTopOf="@+id/layut1"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
     <LinearLayout
         android:id="@+id/layut1"
         android:layout_width="match_parent"
