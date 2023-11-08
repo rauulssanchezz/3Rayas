@@ -24,4 +24,9 @@ class MainActivity : AppCompatActivity() {
         val intent=Intent(this,Ejercicio3::class.java)
         startActivity(intent)
     }
+
+    fun ejercicio4(view: View) {
+        val intent=Intent(this,Ejercicio4::class.java)
+        startActivity(intent)
+    }
 }
