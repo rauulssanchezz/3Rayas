@@ -13,6 +13,12 @@
         android:theme="@style/Theme.3Rayas"
         tools:targetApi="31">
         <activity
+            android:name=".ResultadoEj3"
+            android:exported="false" />
+        <activity
+            android:name=".Ejercicio3"
+            android:exported="false" />
+        <activity
             android:name=".ResultadoEj2"
             android:exported="false" />
         <activity
