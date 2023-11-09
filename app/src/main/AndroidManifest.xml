@@ -13,6 +13,9 @@
         android:theme="@style/Theme.3Rayas"
         tools:targetApi="31">
         <activity
+            android:name=".Ej1"
+            android:exported="false" />
+        <activity
             android:name=".ResultadoEj4"
             android:exported="false" />
         <activity
